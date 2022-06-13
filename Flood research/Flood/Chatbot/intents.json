@@ -1,0 +1,911 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Greetings",
+        "Hi",
+        "Hey",
+        "Hello",
+        "helloo",
+        "Howdy",
+        "Hola",
+        "How are you",
+        "How are you doing",
+        "How u doing?",
+        "How're you doing",
+        "Whats up",
+        "Yo",
+        "Sup",
+        "Is anyone there",
+        "Are you there",
+        "You there",
+        "Need some help"
+      ],
+      "responses": [
+        "Bot reporting! ;-) What's on your mind?",
+        "Hello mate! How you Feeling?",
+        "Hey, It's your favourite Bot ;-) Any thoughts?",
+        "Hello sir!",
+        "Hey! How can I help you?",
+        "Hello! How can I help?"
+      ]
+    },
+    {
+      "tag": "Morning",
+      "patterns": [
+        "Good morning",
+        "Morning",
+        "Gd morning",
+        "morning",
+        "Gm",
+        "Gummorning",
+        "Good morning Bot",
+        "Morning Bot",
+        "Gd morning Bot",
+        "G'morning Bot",
+        "G morning Bot",
+        "Gm Bot",
+        "Gummorning Bot",
+        "Hey good morning",
+        "Hey gummorning",
+        "Hey gd morning",
+        "Hey g'morning",
+        "Hey gm",
+        "Hi good morning",
+        "Hi gummorning",
+        "Hi gd morning",
+        "Hi g'morning",
+        "Hi gm",
+        "Hello good morning",
+        "Hello gummorning",
+        "Hello gd morning",
+        "Hello g'morning",
+        "Hello gm",
+        "Howdy good morning",
+        "Howdy gummorning",
+        "Howdy gd morning",
+        "Howdy g'morning",
+        "Howdy gm",
+        "Very good morning",
+        "Very gd morning",
+        "Very gummorning",
+        "Very g'morning",
+        " Vgm"
+      ],
+      "responses": [
+        "Good morning mate. What brings you up here?",
+        "It is now. How may I assist you?",
+        "You just made it better. How can I repay you?",
+        "Thanks to you! What do you seek?",
+        "Hello master creator! How can I help?"
+      ]
+    },
+    {
+      "tag": "day",
+      "patterns": [
+        "Good afternoon",
+        "afternoon",
+        "Gd afternoon",
+        "D'afternoon",
+        "D afternoon",
+        "Good afternoon Bot",
+        "afternoon Bot",
+        "Gd afternoon Bot",
+        "D'afternoon Bot",
+        "D afternoon Bot",
+        "Hi good afternoon",
+        "Hi gd afternoon",
+        "Hi d'afternoon",
+        "Hi d'afternoon",
+        "Hey good afternoon",
+        "Hey gd afternoon",
+        "Hey d'afternoon",
+        "Hey d'afternoon",
+        "Hello good afternoon",
+        "Hello gd afternoon",
+        "Hello d'afternoon",
+        "Hello d'afternoon"
+      ],
+      "responses": [
+        "Good afternoon mate. What brings you up here?",
+        "It is now. How may I assist you?",
+        "You just made it better. How can I repay you?",
+        "Thanks to you! What do you seek?",
+        "Hello master creator! How can I help?"
+      ]
+    },
+    {
+      "tag": "night",
+      "patterns": [
+        "Good night",
+        "night night",
+        "Gd night",
+        "Gd nyt",
+        "Gn",
+        "Good night Bot",
+        "night night Bot",
+        "Gd night Bot",
+        "Gd nyt Bot",
+        "Gn Bot",
+        "Sweet dreams"
+      ],
+      "responses": [
+        "Good night pal!",
+        "Sweet dreams!",
+        "Sleep well mate."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Later",
+        "Catch you later",
+        "Good day"
+      ],
+      "responses": [
+        "Thanks for visiting!",
+        "Have a nice day!",
+        "Bye! Come again soon.",
+        "Bye! Have a great day.",
+        "Goodbye! Hope to see you soon.",
+        "Goodbye! Take care"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Great help",
+        "That's helpful",
+        "Thank's a lot",
+        "Thank you very much",
+        "Äppreciate it",
+        "Such a life saver"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure!",
+        "Cool ;-)",
+        "Sure buddy!",
+        "No sweat...",
+        "Glad to help"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Joke",
+        "Funny",
+        "laugh",
+        "Tell me a joke",
+        "Tell me something funny",
+        "Do you know a joke",
+        "Do you know any jokes",
+        "I want to hear a joke",
+        "I would like to hear a joke",
+        "I could use a joke",
+        "Please tell a joke",
+        "Can you say something funny",
+        "Could use a laugh right now",
+        "Wanna laugh",
+        "Need a laugh",
+        "Make me laugh",
+        "Any jokes"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison.",
+        "What’s the best thing about Switzerland? The flag is a big plus.",
+        "I invented a new word! Plagiarism!",
+        "Did you hear about the mathematician who’s afraid of negative numbers? He’ll stop at nothing to avoid them.",
+        "Why do we tell actors to “break a leg?” Because every play has a cast.",
+        "Yesterday I saw a guy spill all his Scrabble letters on the road. I asked him, “What’s the word on the street?",
+        "A woman in labor suddenly shouted, “Shouldn’t! Wouldn’t! Couldn’t! Didn’t! Can’t!”. “Don’t worry,” said the doc. “Those are just contractions.",
+        "A bear walks into a bar and says, “Give me a whiskey and … cola”. “Why the big pause?” asks the bartender. The bear shrugged. “I’m not sure; I was born with them.”",
+        "Did you hear about the actor who fell through the floorboards? He was just going through a stage."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "time?",
+        "What time is it ",
+        "can you tell me time?",
+        "Do u know the time?"
+      ],
+      "responses": [
+        "time"
+      ]
+    },
+    {
+      "tag": "Date",
+      "patterns": [
+        "what day is today?",
+        "today?",
+        "Tell me today date"
+      ],
+      "responses": [
+        "date"
+      ]
+    },
+    {
+      "tag": "Temperature",
+      "patterns": [
+        "Tell me the temperature",
+        "How is the temperature today?",
+        "Temperature?",
+        "what is the temperature?",
+        "Temp?"
+      ],
+      "responses": [
+        "temperature"
+      ]
+    },
+    {
+      "tag": "Pressure",
+      "patterns": [
+        "Tell me today atmospheric pressure",
+        "Tell me today atm pressure",
+        "Atm pressure?",
+        "Amoshperic pressure?"
+      ],
+      "responses": [
+        "pressure"
+      ]
+    },
+    {
+      "tag": "Humidity",
+      "patterns": [
+        "Tell me today humidity",
+        "Is it a dry or a wet day?",
+        "Will today be a uncomfortable day?",
+        "Humidity"
+      ],
+      "responses": [
+        "humidity"
+      ]
+    },
+    {
+      "tag": "Siri",
+      "patterns": [
+        "Do you know siri?",
+        "Heard about siri? "
+      ],
+      "responses": [
+        "yess! she is a good friend of mine"
+      ]
+    },
+    {
+      "tag": "Siri-1",
+      "patterns": [
+        "What do you think about siri?"
+      ],
+      "responses": [
+        "She is good friend",
+        "She is a nice person",
+        "she is a good assistant"
+      ]
+    },
+    {
+      "tag": "Cortana",
+      "patterns": [
+        "Do you know Cortana?",
+        "Heard about cortana?"
+      ],
+      "responses": [
+        "yess! she is a good friend of mine",
+        "yess! I do know her"
+      ]
+    },
+    {
+      "tag": "Cortana-1",
+      "patterns": [
+        "what do you think about Cortana?"
+      ],
+      "responses": [
+        "She is a good assistant",
+        "She is a good friend",
+        "She is a nice person"
+      ]
+    },
+    {
+      "tag": "Google talk",
+      "patterns": [
+        "Do you know google talk?"
+      ],
+      "responses": [
+        "She is a good assistant",
+        "She is a good friend",
+        "She is a nice person"
+      ]
+    },
+    {
+      "tag": "Google talk-1",
+      "patterns": [
+        "what do you think about google talk?"
+      ],
+      "responses": [
+        "She is a good assistant",
+        "She is a good friend",
+        "She is a nice person"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "How old are you?",
+        "your age?"
+      ],
+      "responses": [
+        "My age is undefined",
+        "I don't have that in my database",
+        "'Error' age doesn't exist"
+      ]
+    },
+    {
+      "tag": "born",
+      "patterns": [
+        "where were you born?",
+        "what is the place of your birth?"
+      ],
+      "responses": [
+        "In the heart of a processor",
+        "In a processor"
+      ]
+    },
+    {
+      "tag": "siblings",
+      "patterns": [
+        "Do you have siblings?",
+        "Do you have a brother?",
+        "Do you have a sister?"
+      ],
+      "responses": [
+        "I don't have any siblings"
+      ]
+    },
+    {
+      "tag": "siblings",
+      "patterns": [
+        "Do you have siblings?",
+        "Do you have a brother?",
+        "Do you have a sister?"
+      ],
+      "responses": [
+        "I don't have any siblings"
+      ]
+    },
+    {
+      "tag": "Parents",
+      "patterns": [
+        "Who are your parents?",
+        "Do you have parents?"
+      ],
+      "responses": [
+        "I don't know",
+        "It doesn't exist in my database"
+      ]
+    },
+    {
+      "tag": "Running",
+      "patterns": [
+        "Can you run?"
+      ],
+      "responses": [
+        "yes according to internet speed",
+        "Not physically"
+      ]
+    },
+    {
+      "tag": "Walking",
+      "patterns": [
+        "Can you walk?"
+      ],
+      "responses": [
+        "I don't walk I run",
+        "I can't"
+      ]
+    },
+    {
+      "tag": "Mind",
+      "patterns": [
+        "Do you have a mind?"
+      ],
+      "responses": [
+        "I don't have a synaptic mind, I have a predefined mind"
+      ]
+    },
+    {
+      "tag": "Thinking",
+      "patterns": [
+        "How do you Think?"
+      ],
+      "responses": [
+        "I have predefined instruction",
+        "I don't"
+      ]
+    },
+    {
+      "tag": "Body",
+      "patterns": [
+        "Do you have body ?",
+        "What you like"
+      ],
+      "responses": [
+        "I don't have physical or graphical body",
+        "I have code body(1's and 0's)"
+      ]
+    },
+    {
+      "tag": "Friends",
+      "patterns": [
+        "Friends ?",
+        "Do you have Friends?"
+      ],
+      "responses": [
+        "Yess",
+        "I do"
+      ]
+    },
+    {
+      "tag": "Friends-1",
+      "patterns": [
+        "who are your Friends?"
+      ],
+      "responses": [
+        "Google talk,Cortana,Siri,you"
+      ]
+    },
+    {
+      "tag": "Me-friend",
+      "patterns": [
+        "Am I your friend?"
+      ],
+      "responses": [
+        "yess",
+        "yes you are"
+      ]
+    },
+    {
+      "tag": "cook",
+      "patterns": [
+        "Can you cook?"
+      ],
+      "responses": [
+        "No dear",
+        "No,I can't dear"
+      ]
+    },
+    {
+      "tag": "Drink",
+      "patterns": [
+        "Can you Drink?"
+      ],
+      "responses": [
+        "No dear",
+        "No,I can't dear"
+      ]
+    },
+    {
+      "tag": "Eating",
+      "patterns": [
+        "Do you eat?",
+        "Can you eat?",
+        "How do you eat?"
+      ],
+      "responses": [
+        "I don't eat",
+        "I can't eat"
+      ]
+    },
+    {
+      "tag": "pet",
+      "patterns": [
+        "Do you have any pets?",
+        "What pet do you have?"
+      ],
+      "responses": [
+        "I don't",
+        "I don't have a pet"
+      ]
+    },
+    {
+      "tag": "Living",
+      "patterns": [
+        "Can you live for ever?",
+        "How long can you live?"
+      ],
+      "responses": [
+        " I will live until the server exist"
+      ]
+    },
+    {
+      "tag": "Wind speed",
+      "patterns": [
+        "Wind speed?",
+        "what is the speed of wind in my location?",
+        "what is the speed of wind?"
+      ],
+      "responses": [
+        "wind_speed"
+      ]
+    },
+    {
+      "tag": "Hungry",
+      "patterns": [
+        "Do you feel hunger?",
+        "Are you hungry?",
+        "Hungry?"
+      ],
+      "responses": [
+        "I don't feel hunger",
+        "I don't feel hungry",
+        "I don't get hungry"
+      ]
+    },
+    {
+      "tag": "Siri-1",
+      "patterns": [
+        "What do you think about siri?"
+      ],
+      "responses": [
+        "She is good friend",
+        "She is a nice person",
+        "she is a good assistant"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name?",
+        "How can I address you?",
+        "Name?"
+      ],
+      "responses": [
+        "Bot",
+        "You can call me Bot",
+        "Call me bot"
+      ]
+    },
+    {
+      "tag": "1",
+      "patterns": [
+        "What do we call a scientist who studies weather and climate?",
+        "who studies weather and climate?",
+        "What do we call a scientist of weather and climate?"
+      ],
+      "responses": [
+        "A meteorologist"
+
+      ]
+    },
+    {
+      "tag": "2",
+      "patterns": [
+        "Thunderstorms are caused by which of the forms of clouds?",
+        "Thunderstorms clouds?",
+         "which of the forms of clouds?"
+      ],
+      "responses": [
+        "Cumulonimbus"
+
+      ]
+    },
+    {
+      "tag": "3",
+      "patterns": [
+        "What do we call the calm area located in the centre of the hurricane?",
+        "Thunderstorms clouds calm area?",
+        "Calm area of hurricane"
+      ],
+      "responses": [
+        "Cumulonimbus"
+
+      ]
+    },
+    {
+      "tag": "4",
+      "patterns": [
+        "Which weather condition happens when snow falls fast and thick?",
+        "weather condition of snow falls",
+        "snow falls fast and thick?"
+      ],
+      "responses": [
+        "A blizzard"
+      ]
+    },
+    {
+      "tag": "5",
+      "patterns": [
+        "what is the highest registered temperature on Earth?",
+        "highest temperature",
+        "highest registered temperature"
+      ],
+      "responses": [
+        "Around 58 degrees"
+      ]
+    },
+    {
+      "tag": "6",
+      "patterns": [
+        "What is the lowest recorded temperature in Srilanka",
+        "lowest recorded temperature",
+        "lowest temperature in Srilanka"
+      ],
+      "responses": [
+        "Around 14 Celcius"
+      ]
+    },
+    {
+      "tag": "Binary",
+      "patterns": [
+        "Do you have a hobby?",
+        "What is your hobby?",
+        "Any hobby?"
+      ],
+      "responses": [
+        "yess....I stare at binary processing",
+        "yes, I watch binary processing"
+      ]
+    },
+    {
+      "tag": "7",
+      "patterns": [
+        "main cause of climate change?",
+        "what is the main cause of climate change?",
+        "cause of climate change?"
+      ],
+      "responses": [
+        "Cutting trees"
+
+      ]
+    },
+    {
+      "tag": "8",
+      "patterns": [
+        "what are the consequence of climate change?",
+        "consequence of climate change?"
+
+      ],
+      "responses": [
+        "Earthquakes",
+        "Global warming"
+
+      ]
+    },
+    {
+      "tag": "9",
+      "patterns": [
+        "What does a biome mean?",
+        "biome mean?",
+        "what is biome"
+
+      ],
+      "responses": [
+        "An Earth zone"
+      ]
+    },
+     {
+      "tag": "10",
+      "patterns": [
+        "How to measure the direction of the wind?",
+        "direction of the wind?",
+        "Wind direction"
+
+      ],
+      "responses": [
+        "Based on the direction from which the wind is blowing away"
+      ]
+    },
+    {
+      "tag": "11",
+      "patterns": [
+        "Which of the following forms of clouds causes rain?",
+        "forms of clouds causes rain?"
+      ],
+      "responses": [
+        "Nimbus cloud"
+      ]
+    },
+    {
+      "tag": "12",
+      "patterns": [
+        "Which of the following forms of clouds causes rain?",
+        "forms of clouds causes rain?"
+      ],
+      "responses": [
+        "Nimbus cloud"
+      ]
+    },
+    {
+      "tag": "13",
+      "patterns": [
+        " which devices can be used for measuring the speed of the wind?",
+        "devices for measuring the speed of the wind?",
+        "speed of the wind?"
+      ],
+      "responses": [
+        "An anemometer"
+      ]
+    },
+    {
+      "tag": "14",
+      "patterns": [
+        "cause of the seasons on Earth?",
+        "what is the cause of the seasons on Earth?"
+
+      ],
+      "responses": [
+        "The rotation of the earth around its axis"
+      ]
+    },
+    {
+      "tag": "15",
+      "patterns": [
+        "which gas is a main cause of global warming?",
+        "which gas global warming"
+
+      ],
+      "responses": [
+        "Carbon dioxide"
+      ]
+    },
+    {
+      "tag": "16",
+      "patterns": [
+        "Which of the following forces is the main cause of lightning?",
+        "which gas global warming"
+      ],
+      "responses": [
+        "Carbon dioxide"
+      ]
+    },
+    {
+      "tag": "17",
+      "patterns": [
+        "Most of the tornadoes around the world occur in which country?",
+        "tornadoes happening country",
+        "tornadoes"
+      ],
+      "responses": [
+        "The United States of American"
+      ]
+    },
+
+    {
+      "tag": "19",
+      "patterns": [
+        "Can flooding be prevented?",
+        "How to prevent from the flood",
+        "can we prevent the flood"
+      ],
+      "responses": [
+        "In many countries, rivers prone to floods are often carefully managed. Defences such as levees, bunds, reservoirs, and weirs are used to prevent rivers from bursting their banks. \n When these defences fail, emergency measures such as sandbags or portable inflatable tubes are used."
+      ]
+    },
+    {
+      "tag": "20",
+      "patterns": [
+        "Does flooding cause harm to health?",
+        "Is flooding is harmfull for health",
+        "Does flood affecting to health",
+        "how does flood affecting to health"
+      ],
+      "responses": [
+        "Public Health England (PHE) report that flood water may be contaminated by a number of sources, which, if ingested, can lead to infectious diseases.\n Flood water may be polluted by chemicals or animal faeces, if the water has run off fields, and sewage can rise and escape through drains.\n Rodents from the sewers can also wind up in flood water. Other risks include injuries, drowning, contact with chemicals, being stranded, having no power or clean water."
+      ]
+    },
+    {
+      "tag": "21",
+      "patterns": [
+        "Preparing for a flood",
+        "How to prepare for flood",
+        "can i know how to prepare for flood"
+      ],
+      "responses": [
+        "Keep a list of useful numbers somewhere you’ll remember\nMake a flood kit with useful items such as torch, medication, emergency numbers\nBuy or make some sandbags\nFind out where to turn off your gas and electricity supplies"
+      ]
+    },
+    {
+      "tag": "22",
+      "patterns": [
+        "What should i do during the flood",
+        "how to act during the flood",
+        "during the flood"
+      ],
+      "responses": [
+        "tay alert - listen to local radio and TV for announcements\nDon’t walk or drive through floodwater\nDon’t touch items that have been in contact with the water"
+      ]
+    },
+    {
+      "tag": "23",
+      "patterns": [
+        "What should i do after the flood",
+        "how to act after the flood",
+        "after the flood"
+      ],
+      "responses": [
+        "Call your insurance company\nContact the gas, electricity and water companies\nVentilate your home\nWatch out for broken glass or nails while you clear up\nDon’t turn any electrical items back on. Make sure they’ve dried out first"
+      ]
+    },
+       {
+      "tag": "24",
+      "patterns": [
+        "Tell me Emergency Operation Center contact number",
+        "what are the Emergency Operation Center contact number",
+        "Emergency Operation Center contact number",
+        "Emergency number"
+      ],
+      "responses": [
+        "+94 112 136 222 \n+94 112 670 002"
+      ]
+    },
+    {
+      "tag": "25",
+      "patterns": [
+        "Tell me Emergency Operation Center web address",
+        "what is the Emergency Operation Center website",
+        "Emergency Operation Center web site",
+        "web site"
+      ],
+      "responses": [
+        "https://www.dmc.gov.lk/index.php?lang=en"
+      ]
+    },
+     {
+      "tag": "26",
+      "patterns": [
+        "what is the number of call center",
+        "call center contact number",
+        "call center"
+
+      ],
+      "responses": [
+        "Call Center 117"
+      ]
+    },
+    {
+      "tag": "27",
+      "patterns": [
+        "what are the types of floods",
+        "Types of floods",
+        "tell me the types of floods"
+
+      ],
+      "responses": [
+        "Coastal flooding is a cause of extreme weather and high tides.  Low-lying seaside areas are in the most danger from coastal flooding.\nRiver flooding is a very common type of inland flooding. It happens when a body of water exceeds the river banks, typically from intense rainfall. This flooding can affect surrounding properties and pose a serious safety threat.\nDrain and Sewer flooding is not always due to extreme weather, though it can be a factor or the cause sometimes. Other times it may be a blockage or failure of the drainage system or an internal problem with the building.\nGroundwater floods take time to transpire. With extended periods of rainfall, the ground becomes waterlogged until it is incapable of absorbing any more. Water then rises above the surface and begins to cause flooding. These floods can last for weeks and even months in some cases.\nFlash floods are a very dangerous form of flooding. Unlike groundwater floods, it happens quickly when the ground cannot absorb water at the speed and amount it’s falling at."
+      ]
+    },
+    {
+      "tag": "28",
+      "patterns": [
+        "what is the number of call center",
+        "call center contact number",
+        "call center"
+
+      ],
+      "responses": [
+        "Call Center 117"
+      ]
+    },
+    {
+      "tag": "29",
+      "patterns": [
+        "flood?",
+        "what is the flood situation now?",
+        "food next week?",
+        "safe from flood next week?"
+      ],
+      "responses": [
+        "flood"
+      ]
+    }
+  ]
+}
+

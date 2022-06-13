@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map View</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <!--    <script src="{{ url_for('static', filename='js/index.js') }}"></script>-->
+</head>
+<body>
+<div id="map"></div>
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script>
+const citymap = {
+  malabe: {
+    center: { lat: 6.9291, lng: 79.9828 },
+    population: {{average}} * 0.25,
+  }
+};
+
+const citymap2 = {
+  kaduwela: {
+    center: { lat: 6.9291, lng: 79.9828 },
+    population: {{average}} * 0.75,
+  }
+};
+
+const citymap3 = {
+  kaduwela: {
+    center: { lat: 6.9291, lng: 79.9828 },
+    population: {{average}} * 1.25,
+  }
+};
+
+const citymap4 = {
+  kaduwela: {
+    center: { lat: 6.9291, lng: 79.9828 },
+    population: {{average}} * 1.75,
+  }
+};
+
+function initMap() {
+  // Create the map.
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: { lat: 6.9061, lng: 79.9696 },
+    mapTypeId: "terrain",
+  });
+
+  // Construct the circle for each value in citymap.
+  // Note: We scale the area of the circle based on the population.
+
+
+
+
+
+
+  for (const city in citymap4) {
+    // Add the circle for this city to the map.
+    const cityCircle = new google.maps.Circle({
+      strokeColor: "#1aa11e",
+      strokeOpacity: 0.8,
+      strokeWeight: 3,
+      fillColor: "#1aa11e",
+      fillOpacity: 0.35,
+      map,
+      center: citymap4[city].center,
+      radius: Math.sqrt(citymap4[city].population) * 100,
+    });
+  }
+  for (const city in citymap3) {
+    // Add the circle for this city to the map.
+    const cityCircle = new google.maps.Circle({
+      strokeColor: "#F2F123",
+      strokeOpacity: 0.8,
+      strokeWeight: 3,
+      fillColor: "#F2F123",
+      fillOpacity: 0.35,
+      map,
+      center: citymap3[city].center,
+      radius: Math.sqrt(citymap3[city].population) * 100,
+    });
+  }
+
+  for (const city in citymap2) {
+    // Add the circle for this city to the map.
+    const cityCircle = new google.maps.Circle({
+      strokeColor: "#F97D1B",
+      strokeOpacity: 0.8,
+      strokeWeight: 3,
+      fillColor: "#F97D1B",
+      fillOpacity: 0.35,
+      map,
+      center: citymap2[city].center,
+      radius: Math.sqrt(citymap2[city].population) * 100,
+    });
+  }
+
+  for (const city in citymap) {
+    // Add the circle for this city to the map.
+    const cityCircle = new google.maps.Circle({
+      strokeColor: "#F02B22",
+      strokeOpacity: 0.8,
+      strokeWeight: 3,
+      fillColor: "#F02B22",
+      fillOpacity: 0.35,
+      map,
+      center: citymap[city].center,
+      radius: Math.sqrt(citymap[city].population) * 100,
+    });
+  }
+}
+
+
+
+</script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4dHq0RT4M2wNqZdcxAIEcWiclO7GWXl4&callback=initMap&v=weekly"
+        async
+></script>
+</body>
+</html>

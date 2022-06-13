@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+	html { 
+		height: 100%; 
+	}
+	* {box-sizing: border-box;}
+
+	body { 
+		margin: 0;  
+		height: 100%; 
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+
+	.header {
+		overflow: hidden;
+		background-color: #e28743;
+		padding: 5px 10px;
+	}
+
+	.header a {
+		float: left;
+		color: White;
+		text-align: center;
+		padding: 12px;
+		text-decoration: none;
+		font-size: 18px; 
+		line-height: 25px;
+		border-radius: 4px;
+	}
+
+	.header a.logo {
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+	.header a:hover {
+		background-color: #e28743;
+		color: black;
+	}
+
+	.header a.active {
+		background-color: #e28743;
+		color: white;
+	}
+
+	.header-right {
+		float: right;
+	}
+
+	@media screen and (max-width: 500px) {
+	  .header a {
+		float: none;
+		display: block;
+		text-align: left;
+	  }
+	  
+	  .header-right {
+		float: none;
+	  }
+	}
+	
+   .global-container{
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		float: left;
+		width: 100%;
+	}
+
+	form{
+		padding-top: 10px;
+		font-size: 14px;
+		margin-top: 30px;
+	}
+
+	.card-title{ font-weight:300; }
+	
+	.card{opacity: 0.95;}
+	
+	.effect7{
+		position:relative;
+		-webkit-box-shadow:0 1px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow:0 1px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow:0 1px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	}
+	.login-form{ 
+		width:1175px;
+		margin:20px;
+	}
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <a href="/home" class="logo">Home</a>
+    <a href="/flood_area" class="logo">Flood Area</a>
+    <a href="/rain_forecasting" class="logo">Rain Forecasting</a>
+    <a href="/chat_bot" class="logo">Chat Bot</a>
+    <a href="/profile" class="logo">Profile</a>
+</div>
+<div class="global-container">
+    <div class="card login-form effect7">
+        <div class="card-body">
+            <h3 class="card-title text-center">Chat Bot</h3>
+            <h5 class="card-title text-center">Ask me anything u want!</h5>
+            <center><img src={{ url_for('static', filename='images/bot.gif') }} style="width:200px;height:200px;">
+            </center>
+            <form action="chat_bot" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input name="msg" type="text" class="form-control"
+                           placeholder="Your Message" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Send</button>
+                </div>
+            </form>
+            {% for row in reply %}
+            <h5>{{row}}</h5>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var datess = ['Covid', 'Gas', 'Politics']
+
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: datess,
+        datasets: [{
+            label: 'Reach Score',
+    data: {{data}},
+    backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)'
+    ],
+    borderColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)'
+    ],
+    borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
